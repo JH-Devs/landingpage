@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;600;700&display=swap');
+
+:root{
+    --primary-color:#8e44ad;
+    --secondary-color: #9b59b6;
+    --text-color:#34495e;;
+    --text-dark:#2c3e50;
+    --bg-color:#7f8c8d;
+    --max-width:1200px;
+    --light-color:lightgray;
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+.section__container{
+    max-width:var(--max-width);
+    margin:auto;
+    padding:80px 16px;
+}
+.section__header{
+    margin-bottom: 16px;
+    font-size:38px;
+    font-weight:700;
+    color:var(--text-dark);
+}
+.section__subheader {
+    color:var(--text-color);
+}
+.btn{
+    padding: 12px 32px;
+    font-size: 16px;
+    color:white;
+    background: var(--primary-color);
+    border-radius: 80px;
+    border:none;
+    cursor:pointer;
+    transition:0.3s;
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+}
+img{
+    display:flex;
+    width:100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+html,
+body{
+    scroll-behavior: smooth;
+}
+header{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.2),
+    url("./assets/header.jpg"));
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    max-width: var(--max-width);
+    margin:auto;
+    padding:32px 16px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__logo{
+    flex:1;
+}
+.nav__logo a{
+    font-size:24px;
+    font-weight: 600;
+    color:var(--light-color);
+}
+.nav__links {
+    display:flex;
+    align-items:center;
+    gap: 32px;
+}
+.link a {
+    position:relative;
+    padding:10px 0;
+    color: var(--light-color);
+    transition: 0.3s;
+}
+link a:after{
+    position:absolute;
+    content:"";
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    height:2px;
+    width:0;
+    background-color:var(--light-color);
+    transition:0.3s;
+}
+link a:hover::after{
+    width:100%;
+}
+.nav__menu__btn{
+    display:none;
+    font-size:24px;
+    color:var(--light-color);
+}
+.nav__actions{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+    gap:32px;
+}
+.nav__actions span{
+    font-size: 20px;
+    color:var(--light-color);
+    cursor: pointer;
+}
