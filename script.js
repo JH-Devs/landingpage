@@ -21,3 +21,11 @@ ScrollReveal().reveal(".header__container a", {
     ...scrollRevealOption,
     delay:1500,
 });
+
+// swiper
+const swiper = new Swiper(".swiper", {
+    loop:true,
+    pagination: {
+        el:".swiper-pagination",
+    }
+})

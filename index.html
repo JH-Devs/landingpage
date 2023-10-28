@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <header>
@@ -30,7 +34,7 @@
         </nav>
         <div class="section__container header__container" id="home">
             <h1>Minimalistický a moderní inteliér</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi at quasi sint et, velit harum perspiciatis. Soluta asperiores dolorum exercitationem.</p>
+            <p>Rozzářete svůj inteliér moderními minimalistickými prvky.</p>
             <form action="/">
                 <input type="text" placeholder="Hledat nábytek">
                 <button><i class="ri-search-line"></i></button>
@@ -39,32 +43,32 @@
         </div>
     </header>
     <section class="section__container choose__container" id="choose">
-        <img src="./assets/dots.jpg" alt="bg" class="choose__bg" />
+        <img src="./assets/dot-bg.png" alt="bg" class="choose__bg" />
         <div class="choose__content">
-            <h2 class="section__header">Proč si nás vybrat</h2>
+            <h2 class="section__header">Proč si vybrat nás</h2>
             <p class="setion__subheader">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias velit temporibus iusto autem maiores consectetur!
+                Jsme rodinná firma a působíme na trhu již 25 let.
             </p>
             <div class="choose__grid">
                 <div class="choose__card">
                     <span><i class="ri-truck-line"></i></span>
                     <h4>Rychlé & bezplatné doručení</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, asperiores!</p>
+                    <p>S námi měte doručení zdarma. Rychlou dopravu zajišťují naše auta.</p>
                 </div>
                 <div class="choose__card">
                     <span><i class="ri-shopping-bag-3-line"></i></span>
                     <h4>Jednoduché nakupování</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, asperiores!</p>
+                    <p>Nikdy nebylo nakupování tak jednoduché.</p>
                 </div>
                 <div class="choose__card">
                     <span><i class="ri-customer-service-2-line"></i></span>
                     <h4>24/7 zákaznická podpora</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, asperiores!</p>
+                    <p>Jsme tu pro vás 24h 7 dní v týdnu. Kdykoliv se na nás můžete obrátit.</p>
                 </div>
                 <div class="choose__card">
                     <span><i class="ri-loop-right-line"></i></span>
                     <h4>Bezproblémové vrácení zboží</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, asperiores!</p>
+                    <p>Vrácení zboží bez udání důvodu do 30 ti dní, není u nás problém.</p>
                 </div>
             </div>
         </div>
@@ -72,7 +76,202 @@
             <img src="./assets/choose.jpg" alt="choose">
         </div>
     </section>
+    <section class="offer__section" id="offer">
+        <div class="offer__grid__top">
+            <img src="./assets/offer-1.jpg" alt="offer">
+            <img src="./assets/offer-2.jpg" alt="offer">
+            <img src="./assets/offer-3.jpg" alt="offer">
+            <div class="offer__content">
+                <h2 class="section__header">Chytré nákupy</h2>
+                <p class="section__subheader">
+                    Využíjte výhodných nabídek a proměňte svůj pokoj v oázu klidu.
+                </p>
+                <button class="btn">Prozkoumat nabídku</button>
+            </div>
+        </div>
+        <div class="offer__grid__bottom">
+            <img src="./assets/offer-4.jpg" alt="offer">
+            <img src="./assets/offer-5.jpg" alt="offer">
+            <img src="./assets/offer-6.jpg" alt="offer">
+            <img src="./assets/offer-7.jpg" alt="offer">
+        </div>
+    </section>
+    <section class="section__container craft__container" id="craft">
+        <div class="craft__content">
+            <h2 class="section__header">Vyrobeno z odolného materiálu</h2>
+            <p class="section__subheader">
+                Vyzvednětě svůj prostor stylem a kvalitou
+            </p>
+            <button class="btn">Prozkoumat</button>
+        </div>
+        <div class="craft__image">
+            <div class="craft__image__content">
+                <img src="./assets/craft-1.jpg" alt="">
+                <p>Křeslo white</p>
+                <h4>1899 Kč</h4>
+            </div>
+            <a href="#"><i class="ri-add-line"></i></a>
+        </div>
+        <div class="craft__image">
+            <div class="craft__image__content">
+                <img src="./assets/craft-2.jpg" alt="">
+                <p>Křeslo pink</p>
+                <h4>2499 Kč</h4>
+            </div>
+            <a href="#"><i class="ri-add-line"></i></a>
+        </div>
+        <div class="craft__image">
+            <div class="craft__image__content">
+                <img src="./assets/craft-3.jpg" alt="">
+                <p>Židle black</p>
+                <h4>999 Kč</h4>
+            </div>
+            <a href="#"><i class="ri-add-line"></i></a>
+        </div>
+    </section>
+    <section class="section__container modern__container" id="modern">
+        <div class="modern__image">
+            <img src="./assets/dot-bg.png" alt="" class="modern__bg">
+            <img src="./assets/modern-1.jpg" alt="" class="modern__img-1">
+            <img src="./assets/modern-2.jpg" alt="" class="modern__img-2">
+            <img src="./assets/modern-3.jpg" alt="" class="modern__img-3">
+        </div>
+        <div class="modern__content">
+            <h2 class="section__header">
+                Pomůžeme vám s moderním inteliérovým designem
+            </h2>
+            <p class="section__subheader">
+                Proměňte váš prostor s pomocí našich odborníků v oblasti moderního inteliérového designu: Nechte na nás, vytvořit vám elegatní a stylový prostor odrážející váš vkus.
+            </p>
+            <div class="modern__grid">
+                <div class="modern__card">
+                    <span><i class="ri-checkbox-blank-circle-line"></i></span>
+                    <p>
+                        Náš tým se specializuje na vytváření návrhů inteliérů na míru, které zahrnují moderní estetiku.
+                    </p>
+                </div>
+                <div class="modern__card">
+                    <span><i class="ri-checkbox-blank-circle-line"></i></span>
+                    <p>
+                        Zůstáváme v popředí designových trendů a zajišťujeme, že váš prostor bude stylový a inovativní.
+                    </p>
+                </div>
+                <div class="modern__card">
+                    <span><i class="ri-checkbox-blank-circle-line"></i></span>
+                    <p>
+                        Moderní interiérový design není jen o estetice; jde také o funkčnost a pohodlí.
+                    </p>
+                </div>
+                <div class="modern__card">
+                    <span><i class="ri-checkbox-blank-circle-line"></i></span>
+                    <p>
+                        Postaráme se o všechny aspekty procesu návrhu, od konceptu po nákup a instalaci.
+                    </p>
+                </div>
+            </div>
+            <button class="btn">Prozkoumat</button>
+        </div>
+    </section>
+    <section class="section__container testimonial__container" id="testimonial">
+       <h2 class="section__header">Řekli o nás</h2> 
+            <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="testimonial__card">
+                    <p>
+                        Práce s nimi byla absolutní radost! Jejich odbornost v oblasti moderního designu zcela proměnila můj domov v moderní prostor. Nyní mám prostor, který nejen vypadá úžasně, ale také se cítím neuvěřitelně pohodlně. S výsledky jsem nemohl být spokojenější.
+                    </p>
+                    <img src="./assets/profile-pic-1.jpg" alt="">
+                    <h4>Samuel Horný</h4>
+                    <h5>Výkonný ředitel, spoluzakladatel</h5>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="testimonial__card">
+                    <p>
+                        Najala jsem je, aby předělali naše kancelářské prostory a výsledky předčily má očekávání. Jejich inovativní designové koncepty vdechly nový život našemu pracovišti, díky čemuž je funkční i stylové. Cit týmů pro detail a kvalitu jsou skutečně chvályhodné.
+                    </p>
+                    <img src="./assets/profile-pic-2.jpg" alt="">
+                    <h4>Jana Kašparová</h4>
+                    <h5>Manžerka firmy</h5>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="testimonial__card">
+                    <p>
+                        Měl jsem vizi minimalisticky inspirovaného domova a oni jej bezchybně uvedli do života. Jejich návrháři pochopili moji vizi, aby vytvořili klidný prostor. Jsem nadšený ze svého moderního prostoru bez nepořádku.
+                    </p>
+                    <img src="./assets/profile-pic-3.jpg" alt="">
+                    <h4>Petr Novotný</h4>
+                    <h5>Bankéř</h5>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="testimonial__card">
+                    <p>
+                        To, co je odlišuje, je jejich profesionalita a efektivita. Zajistili bezproblémový celý proces návrhu, od úvodní konzultace až po konečnou instalaci. Jejich tým si se vším poradil a mně zůstal krásně navržený moderní interiér.
+                    </p>
+                    <img src="./assets/profile-pic-4.jpg" alt="">
+                    <h4>Dana Musilová</h4>
+                    <h5>Podnikatelka</h5>
+                </div>
+            </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="section__container blog__container" id="blog">
+        <h2 class="section__header">Blog</h2>
+        <div class="blog__grid">
+            <div class="blog__card">
+                <img src="./assets/blog-1.jpg" alt="">
+                <h4>Mistři moderního minimalismu</h4>
+                <p><span>od</span> DesignNová <span>z</span> 18.září 2023</p>
+            </div>
+            <div class="blog__card">
+                <img src="./assets/blog-2.jpg" alt="">
+                <h4>Funkční a technický design</h4>
+                <p><span>od</span>JanaK <span>z</span> 23.září 2023</p>
+            </div>
+            <div class="blog__card">
+                <img src="./assets/blog-3.jpg" alt="">
+                <h4>Inteliéry šetrné k životnímu prostředí</h4>
+                <p><span>od</span> PetrZ <span>z</span> 25.října 2023</p>
+            </div>
+        </div>
+    </section>
+  <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__content">
+            <h4>Přihlašte se k odběru novinek</h4>
+            <p>Doporučujeme odebírat náš newsletter. Zadejte svůj e-mail a získejte od nás novinky a slevové akce. </p>
+        </div>
+        <div class="footer__form">
+            <form action="/">
+                <input type="text" placeholder="Zadejte váš email">
+                <button>Odebírat</button>
+            </form>
+        </div>
+        </div>
+        <div class="section__container footer__bar">
+            <div class="footer__logo">
+                <h4><a href="#">NábytekEshop</a></h4>
+                <p>Copyright © 2023 Vytvořeno JH-Devs.cz. Všechna práva vyhrazena</p>
+            </div>
+            <ul class="footer__nav">
+                <li class="footer__link"><a href="#">O nás</a></li>
+                <li class="footer__link"><a href="#">Partnerství</a></li>
+                <li class="footer__link"><a href="#">GDPR</a></li>
+            </ul>
+        </div>
+    </footer> 
+
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
